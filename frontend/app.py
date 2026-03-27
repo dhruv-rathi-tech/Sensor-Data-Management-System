@@ -150,7 +150,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 if run_query:
     try:
         oracledb.init_oracle_client(lib_dir=r"C:\\oraclexe\\instantclient-basic-windows.x64-23.9.0.25.07\\instantclient_23_9")
-        conn = oracledb.connect(user="system", password="dhruv", dsn="localhost/XE")
+        conn = oracledb.connect(user="system", password="your_password_here", dsn="localhost/XE")
         df = pd.read_sql(sql_query, conn)
         st.session_state["last_df"] = df
         conn.close()

@@ -90,7 +90,7 @@ def load_into_oracle(processed_csv):
     try:
         connection = oracledb.connect(
             user="system",
-            password="dhruv",
+            password="your_password_here",
             dsn="localhost/XE"
         )
         print("✅ Connected to Oracle Database")
